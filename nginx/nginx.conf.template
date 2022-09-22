@@ -6,7 +6,7 @@ http {
   error_log /etc/nginx/error_log.log warn;
   client_max_body_size 250m;
 # when using SSL, uncomment these lines:
-#  include /etc/letsencrypt/options-ssl-nginx-conf;
+#  include /etc/letsencrypt/options-ssl-nginx.conf;
 #  ssl_dhparam /etc/letsencrypt/ssl-dhparams.pem
 
   proxy_cache_path /etc/nginx/cache keys_zone=one:500m max_size=1000m;
